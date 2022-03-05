@@ -57,6 +57,15 @@ Developing for the web is a central part of Anomaly's offerings. The following p
 <details>
 <summary>Web client side architecture</summary>
 
+[ReactJS](https://reactjs.org) is our current Javascript development framework of choice. This plays to our strengths of being able to leverage it for building Single Page Applications (SPA) and use the same skill set to build static web sites using frameworks like [GatsbyJS](https://www.gatsbyjs.com) or [NextJS](https://nextjs.org).
+
+The key outcomes of this project are:
+- Establishing frameworks that are used along side React for network requests, API consumption, etc
+- Outline the use of CSS frameworks like Tailwind CSS
+- Fully inclusive interfaces with a strong focus on accessibility and internationalization
+- Outline delivery of the application on object stores and content distribution networks
+- Asset optimisation for single page applications
+
 [Visit project](projects/arch-client)
 
 </details>
