@@ -34,6 +34,10 @@ Anomaly uses [Docker](https://docker.com) to develop and deploy all it's web app
 
 </details>
 
+<details>
+<summary>Identity management for applications</summary>
+</details>
+
 ## Workflow
 
 <details>
