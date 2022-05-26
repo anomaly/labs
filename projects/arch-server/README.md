@@ -4,6 +4,7 @@
 
 - FastAPI, https://fastapi.tiangolo.com
 - Configuration management, https://github.com/rochacbruno/dynaconf/
+- BDD, https://behave.readthedocs.io/en/stable/philosophy.html
 
 
 Authentication:

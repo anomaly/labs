@@ -1,10 +1,19 @@
 # Anomaly Labs
-Working designs, documentation and references for all ideas at Anomaly labs.
+Working designs, documentation and references for all ideas at Anomaly labs. The general philosophy behind each one of these projects is to increase communication between developers and designers and reduce the need for synchronous communication.
 
-## Infrastructure
+Anomaly desires to pursue multiple products, streamlining the development process will be a vital to the success of the projects.
 
-<details>
-<summary>Terraform reference implementation for Linode</summary>
+# Infrastructure
+
+Our approach roughly is to use:
+- Docker and Docker Hub to manage to publish images of our containers
+- Terraform to provision the components we require e.g Kubernetes Cluster, Managed database, networking rules, DNS. Use Terraform Cloud for managing the state of the infrastructure.
+- Helm to deploy Charts in cluster itself e.g Redis, Postgres (until Linode has a managed solution), and our application.
+- Use Kubernetes to scale replicas up and down as we need them (this should be automated into the future).
+
+Previously the team's approach was to keep application and deployment sources in the same repository. A central theme of these repositories is to decouple the application from deployment, providing the most amount of flexibility.
+
+## Terraform reference implementation for Linode
 
 The project aims to establish a standardised reference for using Terraform to provision and tear down infrastructure. 
 
@@ -16,11 +25,14 @@ Our key outcomes for this project are:
 - Create a Template project that developers can use to speed up their setup
 
 [Visit project](projects/terraform-linode)
+ 
+## Helm reference usage
 
-</details>
+The project aims to establish an understanding of deploying applications with Helm and best practices around secrets management.
 
-<details>
-<summary>Containerised application deployment</summary>
+Our aim will be to deploy various components like Redis, Postgres, and our application. As Linode brings up managed services we will move components out of the cluster.
+
+## Containerised application deployment
 
 Anomaly uses [Docker](https://docker.com) to develop and deploy all it's web applications. Deployment of the these applications has varied between client projects. This lab exercise aims to strongly define and provide a reference implementation that:
 
@@ -32,34 +44,25 @@ Anomaly uses [Docker](https://docker.com) to develop and deploy all it's web app
 
 [Visit project](projects/docker-k8s)
 
-</details>
+## Identity management for applications
 
-<details>
-<summary>Identity management for applications</summary>
-</details>
+TBA
 
-## Workflow
+# Workflow
 
-<details>
-<summary>CI/CD pipeline</summary>
+## CI/CD pipeline
 
 [Visit project](projects/ci-cd)
-
-</details>
 
 # Web development
 
 Developing for the web is a central part of Anomaly's offerings. The following projects explore and document core technologies and methods to ensure that our approach stays modern:
 
-<details>
-<summary>Server side architecture</summary>
+## Server side architecture
 
 [Visit project](projects/arch-server)
 
-</details>
-
-<details>
-<summary>Web client side architecture</summary>
+## Web client side architecture
 
 [ReactJS](https://reactjs.org) is our current Javascript development framework of choice. This plays to our strengths of being able to leverage it for building Single Page Applications (SPA) and use the same skill set to build static web sites using frameworks like [GatsbyJS](https://www.gatsbyjs.com) or [NextJS](https://nextjs.org).
 
@@ -72,22 +75,16 @@ The key outcomes of this project are:
 
 [Visit project](projects/arch-client)
 
-</details>
 
-## Mobile 
+# Mobile 
 
-<details>
-<summary>iOS project layout</summary>
+## iOS project layout
 
 [Visit project](projects/arch-ios)
 
-</details>
-
 ## Other
 
-<details>
-<summary>Reading list</summary>
-</details>
+## Reading list
 
 
 
