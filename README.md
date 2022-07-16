@@ -26,7 +26,7 @@ Our key outcomes for this project are:
 
 [Visit project](projects/terraform-linode)
  
-## Helm reference usage
+### Helm Kubernetes provider
 
 The project aims to establish an understanding of deploying applications with Helm and best practices around secrets management.
 
@@ -60,7 +60,9 @@ Developing for the web is a central part of Anomaly's offerings. The following p
 
 ## Server side architecture
 
-[Visit project](projects/arch-server)
+Python is the language of choice on the server for projects at Anomaly. This project has matured and has it's own repository with recommendations and best practices for building the server side of Anomaly applications.
+
+[Visit project](https://github.com/anomaly/labl-python-server)
 
 ## Web client side architecture
 
@@ -82,11 +84,23 @@ The key outcomes of this project are:
 
 [Visit project](projects/arch-ios)
 
-## Other
 
-## Reading list
+# Documentation
 
+Documentation is central to everything any intellectual business. The following project outlines technologies and standards that should be used to produce beautiful documentation. 
 
+We recommend the use of [Markdoc](https://markdoc.io) along with [NextJS](https://nextjs.org) to produce documentation. Additionally you might consider the use of a template like [Syntax](https://tailwindui.com/templates/syntax) from the makers of Tailwind CSS.
+
+Knowledge sharing is at the core of the growth of any business. 
+
+> If your team isn't documenting the knowledge then they are growing not the business.
+
+# Reading list
+
+The following are recommend reads for software engineering habits:
+
+- [Shape Up: Stop Running in Circles
+and Ship Work that Matters](https://basecamp.com/shapeup)
 
 # License
 Content of this repository are licensed under the Apache 2.0 license.
